@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <link type="text/css" rel="stylesheet" href="ansefi.css" />
+    <link type="text/css" rel="stylesheet" href="ansefi_responsive.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="js/playliste.js"></script>
+    <script type="text/javascript" src="js/hidden.js"></script>
+    <script type="text/javascript" src="js/previous.js"></script>
+    <script type="text/javascript" src="js/boule.js"></script>
+    <title>Ansefi - Animes Séries Films</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="banniere_tete" class='bloc' class=".dont_float_mobile"> <img class="img_ansefi" src="images/ansefi_banniere.png">
+            <input class='bloc' placeholder="Recherche" /><img class="loupe" class='bloc' src="images/loupe.png">
+        </div>
+        <div class="menu">
+            <button id="menu_animes">Animes</button>
+            <button id="menu_series">Séries</button>
+            <button id="menu_films">Films</button>
+        </div>
+
+        <div class="player">
+            <div class="pl"></div>
+            <div class="title"></div>
+            <div class="artist"></div>
+            <div class="cover"></div>
+            <div class="controls">
+                <div class="play"></div>
+                <div class="pause"></div>
+                <div class="rew"></div>
+                <div class="fwd"></div>
+            </div>
+            <div class="volume"></div>
+            <div class="tracker"></div>
+        </div>
+
+        <ul class="playlist hidden">
+            <li audiourl="03_Silly_Go_Round.mp3" cover="cover1.jpg" artist="hack-roots">Silly-Go-Round</li>
+            <li audiourl="angel gate.mp3" cover="cover2.jpg" artist="Artist 2">02.mp3</li>
+            <li audiourl="03.mp3" cover="cover3.jpg" artist="Artist 3">03.mp3</li>
+            <li audiourl="04.mp3" cover="cover4.jpg" artist="Artist 4">04.mp3</li>
+            <li audiourl="05.mp3" cover="cover5.jpg" artist="Artist 5">05.mp3</li>
+            <li audiourl="06.mp3" cover="cover6.jpg" artist="Artist 6">06.mp3</li>
+            <li audiourl="07.mp3" cover="cover7.jpg" artist="Artist 7">07.mp3</li>
+        </ul>
+
+        <div class="ajout">
+            <p class="news">Derniers Ajouts</p>
+            <hr />
+            <p class="infon">16/12/2015 / Animes - Attaque des Titans</p>
+            <p class="infon">16/12/2015 / Animes - Attaque des Titans</p>
+            <p class="infon">16/12/2015 / Animes - Attaque des Titans</p>
+            <p class="infon">16/12/2015 / Animes - Attaque des Titans</p>
+            <p class="infon">16/12/2015 / Animes - Attaque des Titans</p>
+        </div>
+
+        <div class="div_boule">
+            <div id="b1" class="boule1" onclick="javascript:boule_color(1);"></div>
+            <div id="b2" class="boule" onclick="javascript:boule_color(2);"></div>
+            <div id="b3" class="boule" onclick="javascript:boule_color(3);"></div>
+            <div id="b4" class="boule" onclick="javascript:boule_color(4);"></div>
+            <div id="b5" class="boule" onclick="javascript:boule_color(5);"></div>
+        </div>
+
+        <div id="div-qui-scroll-horizontalement">
+            <div id="img1">
+                <img class="img_scroll" src="images/slide1.jpg" alt="slide 1">
+                <div id="next1" onclick="javascript:afficher_cacher(1);">NEXT</div>
+                <div id="prev1" onclick="javascript:previous(1);">PREV.</div>
+                <div class="img_scroll_opaque">
+                    <h1 class="scroll_title">One Piece</h1>
+                    <p class="txt_scroll">Toujours au chevet d'Inuarashi, Luffy et ses compagnons assistent au couché du duc. L'étonnement est palpable, Wanda explique alors l'étrange coutume qui veut que Inuarashi se couche à 18h quand Nekomamushi se lève au même moment. </p>
+                </div>
+            </div>
+
+            <div id="img2">
+                <img class="img_scroll2" src="images/slide2.jpg" alt="slide 1">
+                <div id="next2" onclick="javascript:afficher_cacher(2);">NEXT</div>
+                <div id="prev2" onclick="javascript:previous(2);">PREV.</div>
+                <div class="img_scroll_opaque">
+                    <h1 class="scroll_title">Dark</h1>
+                    <p class="txt_scroll">gjksdgklsdnlkgnskngsdgsdgndsngkljsdgkjnslkgnslnglsnkngkdlnlgsndlkgnsldknglksngsdgnlskl</p>
+                </div>
+            </div>
+
+            <div id="img3">
+                <img class="img_scroll3" src="images/slide3.jpg" alt="slide 1">
+                <div id="next3" onclick="javascript:afficher_cacher(3);">NEXT</div>
+                <div id="prev3" onclick="javascript:previous(3);">PREV.</div>
+                <div class="img_scroll_opaque">
+                    <h1 class="scroll_title">Game Of Throne</h1>
+                    <p class="txt_scroll">Game Of Throne est une série cult depuis 500 ans.</p>
+                </div>
+            </div>
+
+            <div id="img4">
+                <img class="img_scroll4" src="images/slide4.jpg" alt="slide 1">
+                <div id="next4" onclick="javascript:afficher_cacher(4);">NEXT</div>
+                <div id="prev4" onclick="javascript:previous(4);">PREV.</div>
+                <div class="img_scroll_opaque">
+                    <h1 class="scroll_title">Reborn</h1>
+                    <p class="txt_scroll">Reborn est un animes qui parle d'un gamin à la tête d'une famille mafieuse.</p>
+                </div>
+            </div>
+
+            <div id="img5">
+                <img class="img_scroll5" src="images/slide5.jpg" alt="slide 1">
+                <div id="next5" onclick="javascript:afficher_cacher(5);">NEXT</div>
+                <div id="prev5" onclick="javascript:previous(5);">PREV.</div>
+                <div class="img_scroll_opaque">
+                    <h1 class="scroll_title">Vikings !</h1>
+                    <p class="txt_scroll">Vikings est une superbe série, génialement écrite !</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p id="contact">contact</p>
+            <div class="hr">
+                <hr class="not_mobile" />
+            </div>
+            <div class="logo">
+                <a href="mailto:contact.li.jinhao@gmail.com"><img class="mail" src="images/mail.png" alt="icone e-mail"></a>
+            </div>
+        </div>
+
+        <div class="all">
+            <p class="right">All right reserved @Eraykor - 2015</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

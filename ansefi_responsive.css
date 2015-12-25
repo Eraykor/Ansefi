@@ -1,0 +1,14 @@
+@media screen and (max-width: 625px)
+{
+/* propriétés pour mobile */
+    .not_mobile { display: none; }
+    .dont_float_mobile { float: none; }
+    .bloc { display: block; }
+}
+
+@media screen and (max-width: 976px)
+{
+/* propriétés pour tablette */
+}
+
+	
