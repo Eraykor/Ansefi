@@ -6,10 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes" />
     <link type="text/css" rel="stylesheet" href="ansefi_responsive.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="bootstrap-theme.min.css" />
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="ansefi.css" />
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <title>Ansefi - Animes Séries Films</title>
 </head>
 
@@ -31,7 +32,7 @@
             <a href="#" class="col-md-3 menu-elem menu-link">SERIES</a>
             <a href="#" class="col-md-3 menu-elem menu-link">FILMS</a>
             <div class="col-md-3 menu-elem">
-                <span class="glyphicon glyphicon-search search-icon"></span>
+                <span class="glyphicon glyphicon-search loupe"></span>
                 <input type="text" class="search-input" />
             </div>
         </div>
@@ -48,7 +49,7 @@
                         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                     </ol>
 
-                    <!-- Wrapper for slides -->
+                    <!-- Wrapper for slides / Caroussel -->
                     <div class="carousel-inner" role="listbox">
 
                         <div class="item active">
@@ -95,54 +96,88 @@
 
                     <!-- Controls -->
                     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-chevron-left fleche" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-chevron-right fleche" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>
         </div>
 
+        <!-- Section des News -->
         <div class="row">
             <div class="col-md-12">
                 <div class="ajout">
                     <p class="news">News</p>
-                    
+
                     <div class="news_div">
+                        <div class="div_title">
+                            <h1 class="news_title hover">L'attaque des Titans !</h1>
+                        </div>
                         <div class="news_img">
                             <img class="img" src="images/adt.jpg" alt="Attaque des Titans">
                         </div>
-                        <h1 class="news_title"><span class="hover">L'attaque des Titans !</span></h1>
-                        <p class="note"><span>Note</span> : 9/10</p>
-                        <p><span>Synospis</span> :</p>
-                        <p class="synopsis">Depuis cent ans, l'humanité vit enfermée derrière des murs. Depuis cent ans elle redoute le retour des Titans, des créatures géantes cauchemardesques pour qui les hommes ne sont que de la nourriture, des insectes.
 
-Et maintenant qu'ils sont revenus, les hommes vont à nouveau plonger dans le désespoir, la mort et l'impuissance. Mais pour Eren, Mikasa et Armin dont la vie a été détruite, il est l'heure de se battre. Afin de vivre ou de mourir en tant qu'humains et non en tant que bétail.
+                        <div class="div_note">
+                            <p><span>Titre Original</span> : Shingeki no Kyojin</p>
+                            <p><span>Note</span> : 9/10</p>
+                            <p><span>Année de Production</span> : 2013</p>
+                            <p><span>Genre</span> : Action </p>
+                            <p><span>Durée</span> : 25 EPS 24 mins</p>
+                        </div>
 
-L'heure de se battre et de rendre les coups... Ou de faire un dernier geste de bravoure avant un destin inéluctable ? [Source : Animeka]</p>
-                        <p><span>Critique</span> :</p>
-                        <p class="critique">Une Série que j'ai beaucoup apprécié, l'histoire est originale et bien ficelé, l'anime n'a pas peur de montrer du gore =), les personnages sont charismatiques à souhait, un des rares animes ou j'en redemande encore !</p>
+                        <div class="synopcrit">
+                            <div class="div_second_title">
+                                <p class="second_title">Synospis</p>
+                            </div>
+                            <p>Depuis cent ans, l'humanité vit enfermée derrière des murs. Depuis cent ans elle redoute le retour des Titans, des créatures géantes cauchemardesques pour qui les hommes ne sont que de la nourriture, des insectes. Et maintenant qu'ils sont revenus, les hommes vont à nouveau plonger dans le désespoir, la mort et l'impuissance. Mais pour Eren, Mikasa et Armin dont la vie a été détruite, il est l'heure de se battre. Afin de vivre ou de mourir en tant qu'humains et non en tant que bétail. L'heure de se battre et de rendre les coups... Ou de faire un dernier geste de bravoure avant un destin inéluctable ? [Source : Animeka]</p>
+                        </div>
+
+                        <div class="synopcrit">
+                            <div class="div_second_title">
+                                <p class="second_title">Critique</p>
+                            </div>
+                            <p class="critique">Une Série que j'ai beaucoup apprécié, l'histoire est originale et bien ficelé, l'anime n'a pas peur de montrer du gore =), les personnages sont charismatiques à souhait, un des rares animes ou j'en redemande encore !</p>
+                        </div>
                     </div>
+
+                    <hr />
                     
                     <div class="news_div">
+                        <div class="div_title">
+                            <h1 class="news_title hover">Utawarerumono: Itsuwari no Kamen</h1>
+                        </div>
                         <div class="news_img">
                             <img class="img" src="images/utawarerumono_news.jpg" alt="Utawarerumono: Itsuwari no Kamen">
                         </div>
-                        <h1 class="news_title"><span class="hover">Utawarerumono: Itsuwari no Kamen</span></h1>
-                        <p class="note"><span>Note</span> : 8/10</p>
-                        <p><span>Synospis</span> :</p>
-                        <p class="synopsis">Adapté du second jeu Utawarerumono.
 
-L'histoire commence lorsque un homme seul, se réveille au beau milieu d'une plaine en ayant perdu la mémoire. En regardant autour de lui, il aperçu un énorme monstre se ruer dans sa direction. Ayant perdu tout espoir de survie, ce dernier s'abandonne à son sort. C'est là qu'une jolie jeune fille aux oreilles d'animal avec une queue, nommée Kuon, lui sauve la vie.
+                        <div class="div_note">
+                            <p><span>Titre Original</span> : Utawarerumono: Itsuwari no Kamen</p>
+                            <p><span>Note</span> : 8/10</p>
+                            <p><span>Année de Production</span> : 2015</p>
+                            <p><span>Genre</span> : Aventure, Drame, Fantastique et Mythe, Tranche de Vie</p>
+                            <p><span>Durée</span> : 25 EPS 24 mins</p>
+                        </div>
 
-Après l'avoir recueilli, cette dernière va l'aider à retrouver sa mémoire. [Source : Nautiljon]</p>
-                        <p><span>Critique</span> :</p>
-                        <p class="critique">Une Série que j'ai beaucoup apprécié, l'histoire est originale et bien ficelé, l'anime n'a pas peur de montrer du gore =), les personnages sont charismatiques à souhait, un des rares animes ou j'en redemande encore !</p>
+
+                        <div class="synopcrit">
+                            <div class="div_second_title">
+                                <p class="second_title">Synospis</p>
+                            </div>
+                            <p class="synopsis">Adapté du second jeu Utawarerumono. L'histoire commence lorsque un homme seul, se réveille au beau milieu d'une plaine en ayant perdu la mémoire. En regardant autour de lui, il aperçu un énorme monstre se ruer dans sa direction. Ayant perdu tout espoir de survie, ce dernier s'abandonne à son sort. C'est là qu'une jolie jeune fille aux oreilles d'animal avec une queue, nommée Kuon, lui sauve la vie. Après l'avoir recueilli, cette dernière va l'aider à retrouver sa mémoire. [Source : Nautiljon]</p>
+                        </div>
+
+                        <div class="synopcrit">
+                            <div class="div_second_title">
+                                <p class="second_title">Critique</p>
+                            </div>
+                            <p class="critique">Une Série que j'ai beaucoup apprécié, l'histoire est originale et bien ficelé, l'anime n'a pas peur de montrer du gore =), les personnages sont charismatiques à souhait, un des rares animes ou j'en redemande encore !</p>
+                        </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -154,10 +189,34 @@ Après l'avoir recueilli, cette dernière va l'aider à retrouver sa mémoire. [
             </div>
         </div>
     </div>
-    
+
     <figure id="audioplayer">
-            <audio controls id="audiotrack"></audio>
+
+        <button type="button" id="playbutton" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-play fleche" aria-hidden="true"></span>
+        </button>
+
+        <button type="button" id="previous" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-fast-backward fleche" aria-hidden="true"></span>
+        </button>
+
+        <button type="button" id="next" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-fast-forward fleche" aria-hidden="true"></span>
+        </button>
+
+        <button type="button" id="mute" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-volume-down fleche" aria-hidden="true"></span>
+        </button>
+
+        <input id="volume" type="range" min="0" max="1" step="any" value="1"></input>
+
+        <div id="titreMusique"></div>
+
+        <input id="progress" type="range"></input>
+
+        <audio controls id="audiotrack"></audio>
     </figure>
+
     <script type="text/javascript" src="js/playliste.js"></script>
     <script type="text/javascript">
         $('.carousel').carousel();

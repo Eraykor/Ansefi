@@ -1,0 +1,171 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@font-face {
+    font-family: "Akashi";
+    src: url('fonts/Akashi.ttf');
+}
+
+.div_alphabet {
+    width: 100%;
+    margin: 0;
+    background-color: #02161a;
+    padding-bottom: 3%;
+}
+
+.liste_animes {
+    background: linear-gradient(to right, #010a0c 5%, #02161a 95%);
+    font-size: 1.6em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: 'Akashi', sans-serif;
+    padding-top: 0.3%;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.button {
+    text-align: center;
+}
+
+.alphabet {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    width: 2.5%;
+    text-align: center;
+}
+
+.bloc_fiche_animes {
+    width: 98%;
+    border: 1px solid grey;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.title_animes {
+    width: 100%;
+    background-color: #15161C;
+    border-bottom: 1px solid grey;
+    font-family: 'Akashi', sans-serif;
+    font-size: 1.3em;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.img_bloc_fiche {
+    width: 200px;
+    height: 200px;
+    border-right: 1px solid grey;
+    left: 0;
+    display: inline-block;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.synopsis {
+    position: absolute;
+    display: inline-block;
+    width: 78%;
+    height: 100%;
+    text-align: justify;
+    padding: 2%;
+    color: whitesmoke;
+}
+
+/* css de base */
+body {
+    background-color: #15161C;
+} 
+
+.menu {
+    background-color: #010a0c;
+    margin: 0;
+}
+
+.menu-elem {
+    color: white;
+    padding: 0.5%;
+    padding-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14pt;
+}
+
+.menu-link {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-link:hover {
+    text-decoration: none;
+}
+
+.search-input {
+    border: 1;
+    border-width: thin;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: white;
+}
+
+.loupe {
+    text-decoration: none;
+}
+
+.img_ansefi {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 115px;
+    padding-top: 1%;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    color: whitesmoke;
+}
+/* fin css de base */
+
+/* css du player */
+#audioplayer {
+    position: fixed;
+    opacity: 0.7;
+    background-color: black;
+    width: 100%;
+    height: 31px;
+    bottom:0;
+    padding-bottom: 0;
+    z-index: 2;
+}
+
+
+#playbutton{
+    margin-left: 0.3%;
+}
+
+#audiotrack {
+    width: 100%;
+}
+
+#volume {
+    width: 100px;
+    display: inline-block;
+    margin-bottom: -0.4%;
+}
+
+#progress {
+    width: 600px;
+    display: inline-block;
+    margin-bottom: -0.4%;
+    margin-left: 1%;
+}
+
+#titreMusique {
+    display: inline-block;
+    margin-bottom: -0.4%;
+    margin-left: 2%;
+}
+
+/* fin css du player */

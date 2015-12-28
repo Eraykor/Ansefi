@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <link type="text/css" rel="stylesheet" href="ansefi_responsive.css" />
+    <link type="text/css" rel="stylesheet" href="bootstrap-theme.min.css" />
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="animes.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <title>Ansefi - Animes Séries Films</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- bannière -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img_ansefi" src="images/test2.png">
+            </div>
+        </div>
+
+        <!-- menu -->
+
+        <div class="row menu">
+            <a href="#" class="col-md-3 menu-elem menu-link">ANIMES</a>
+            <a href="#" class="col-md-3 menu-elem menu-link">SERIES</a>
+            <a href="#" class="col-md-3 menu-elem menu-link">FILMS</a>
+            <div class="col-md-3 menu-elem">
+                <span class="glyphicon glyphicon-search loupe"></span>
+                <input type="text" class="search-input" />
+            </div>
+        </div>
+
+        <div class="row menu">
+            <div class="col-md-12 div_alphabet">
+                <div class="liste_animes">Liste des Animes</div>
+                <div class="button">
+                    <button class="alphabet" href="#">#</button>
+                    <button class="alphabet" href="#"> A</button>
+                    <button class="alphabet" href="#"> B</button>
+                    <button class="alphabet" href="#"> C</button>
+                    <button class="alphabet" href="#"> D</button>
+                    <button class="alphabet" href="#"> E</button>
+                    <button class="alphabet" href="#"> F</button>
+                    <button class="alphabet" href="#"> G</button>
+                    <button class="alphabet" href="#"> H</button>
+                    <button class="alphabet" href="#"> I</button>
+                    <button class="alphabet" href="#"> J</button>
+                    <button class="alphabet" href="#"> K</button>
+                    <button class="alphabet" href="#"> L</button>
+                    <button class="alphabet" href="#"> M</button>
+                    <button class="alphabet" href="#"> N</button>
+                    <button class="alphabet" href="#"> O</button>
+                    <button class="alphabet" href="#"> P</button>
+                    <button class="alphabet" href="#"> Q</button>
+                    <button class="alphabet" href="#"> R</button>
+                    <button class="alphabet" href="#"> S</button>
+                    <button class="alphabet" href="#"> T</button>
+                    <button class="alphabet" href="#"> U</button>
+                    <button class="alphabet" href="#"> V</button>
+                    <button class="alphabet" href="#"> W</button>
+                    <button class="alphabet" href="#"> X</button>
+                    <button class="alphabet" href="#"> Y</button>
+                    <button class="alphabet" href="#"> Z</button>
+                </div>
+
+                <div class="bloc_fiche_animes">
+                    <div class="title_animes">L'Attaque des Titans</div>
+                    <div class="img_bloc_fiche"><img class="img" src="images/adt.jpg"></div>
+                    <div class="synopsis">
+                        <p>Depuis cent ans, l'humanité vit enfermée derrière des murs. Depuis cent ans elle redoute le retour des Titans, des créatures géantes cauchemardesques pour qui les hommes ne sont que de la nourriture, des insectes. Et maintenant qu'ils sont revenus, les hommes vont à nouveau plonger dans le désespoir, la mort et l'impuissance. Mais pour Eren, Mikasa et Armin dont la vie a été détruite, il est l'heure de se battre. Afin de vivre ou de mourir en tant qu'humains et non en tant que bétail. L'heure de se battre et de rendre les coups... Ou de faire un dernier geste de bravoure avant un destin inéluctable ? [Source : Animeka]</p>
+                    </div>
+                </div>
+
+                <div class="bloc_fiche_animes">
+                    <div class="title_animes">Utawarerumono: Itsuwari no Kamen</div>
+                    <div class="img_bloc_fiche"><img class="img" src="images/utawarerumono_news.jpg"></div>
+                    <div class="synopsis">
+                        <p>Adapté du second jeu Utawarerumono. L'histoire commence lorsque un homme seul, se réveille au beau milieu d'une plaine en ayant perdu la mémoire. En regardant autour de lui, il aperçu un énorme monstre se ruer dans sa direction. Ayant perdu tout espoir de survie, ce dernier s'abandonne à son sort. C'est là qu'une jolie jeune fille aux oreilles d'animal avec une queue, nommée Kuon, lui sauve la vie. Après l'avoir recueilli, cette dernière va l'aider à retrouver sa mémoire. [Source : Nautiljon]</p>
+                    </div>
+                </div>
+
+                <div class="bloc_fiche_animes">
+                    <div class="title_animes"></div>
+                    <div class="img_bloc_fiche"></div>
+                    <div class="synopsis">
+                        <p></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 footer">
+                <p>© 2016 - Eraykor</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Creation du player -->
+
+    <figure id="audioplayer">
+
+        <button type="button" id="playbutton" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-play fleche" aria-hidden="true"></span>
+        </button>
+
+        <button type="button" id="previous" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-fast-backward fleche" aria-hidden="true"></span>
+        </button>
+
+        <button type="button" id="next" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-fast-forward fleche" aria-hidden="true"></span>
+        </button>
+
+        <button type="button" id="mute" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-volume-down fleche" aria-hidden="true"></span>
+        </button>
+
+        <input id="volume" type="range" min="0" max="1" step="any" value="1"></input>
+
+        <div id="titreMusique"></div>
+
+        <input id="progress" type="range"></input>
+
+        <audio controls id="audiotrack"></audio>
+    </figure>
+
+    <script type="text/javascript" src="js/playliste.js"></script>
+    <script type="text/javascript">
+        $('.carousel').carousel();
+        initPlayer();
+        loadCurrentTrack();
+    </script>
+</body>
+
+</html>

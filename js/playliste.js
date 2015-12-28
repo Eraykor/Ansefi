@@ -21,6 +21,7 @@ function setText(elem, text) {
     elem.innerHTML = text;
 }
 
+// for set attribute
 function setAttributes(elem, attrs) {
     for (var k in attrs) {
         elem.setAttribute(k, attrs[k]);
@@ -32,64 +33,36 @@ function initPlayer() {
     audioTrack = document.getElementById("audiotrack");
 
     // create play button
-    playButton = document.createElement("button");
-    playButton.type = "button";
-    audioPlayer.appendChild(playButton);
+    playButton = document.getElementById("playbutton");
     audioTrack.removeAttribute("controls");
     audioTrack.addEventListener("play", function () {
-        setText(playButton, "Pause");
+        setText(playButton, '<span class="glyphicon glyphicon-pause fleche" aria-hidden="true"></span>');
     });
     audioTrack.addEventListener("playing", function () {
-        setText(playButton, "Pause");
+        setText(playButton, '<span class="glyphicon glyphicon-pause fleche" aria-hidden="true"></span>');
     });
     audioTrack.addEventListener("pause", function () {
-        setText(playButton, "Play");
+        setText(playButton, '<span class="glyphicon glyphicon-play fleche" aria-hidden="true"></span>');
     });
-    setText(playButton, "Play");
+    setText(playButton, '<span class="glyphicon glyphicon-play fleche" aria-hidden="true"></span>');
 
     // create previous button
-    prevButton = document.createElement("button");
-    prevButton.type = "button";
-    audioPlayer.appendChild(prevButton);
-    setText(prevButton, "Previous");
+    prevButton = document.getElementById("previous");
 
     // create next button
-    nextButton = document.createElement("button");
-    nextButton.type = "button";
-    audioPlayer.appendChild(nextButton);
-    setText(nextButton, "Next");
+    nextButton = document.getElementById("next");
 
     // create mute button
-    muteButton = document.createElement("button");
-    muteButton.type = "button";
-    audioPlayer.appendChild(muteButton);
-    setText(muteButton, "Mute")
+    muteButton = document.getElementById("mute");
 
     // create volume slider
-    volumeSlider = document.createElement("input");
-    volumeSlider.type = "range";
-    audioPlayer.appendChild(volumeSlider);
-    volumeSlider.style.width = "100px";
-    volumeSlider.style.display = "inline-block";
-    setAttributes(volumeSlider, {
-        "type": "range",
-        "min": "0",
-        "max": "1",
-        "step": "any",
-        "value": "1"
-    });
-
-    // create progression slider
-    progressSlider = document.createElement("input");
-    progressSlider.type = "range";
-    audioPlayer.appendChild(progressSlider);
-    progressSlider.style.width = "auto";
-    progressSlider.style.display = "inline-block";
+    volumeSlider = document.getElementById("volume");
 
     // create audio title
-    audioTitle = document.createElement("div");
-    audioTitle.style.display = "inline-block";
-    audioPlayer.appendChild(audioTitle);
+    audioTitle = document.getElementById("titreMusique");
+    
+    // create progression slider
+    progressSlider = document.getElementById("progress");
 
     playButton.addEventListener("click", playPause);
     nextButton.addEventListener("click", nextTrack);
@@ -188,9 +161,9 @@ function changeVolume() {
 function updateMuteButton() {
     volumeSlider.value = audioTrack.volume;
     if (audioTrack.volume != 0) {
-        setText(muteButton, "Mute");
+        setText(muteButton, '<span class="glyphicon glyphicon-volume-down fleche" aria-hidden="true"></span>');
     } else {
-        setText(muteButton, "Unmute");
+        setText(muteButton, '<span class="glyphicon glyphicon-volume-off fleche" aria-hidden="true"></span>');
     }
 }
 

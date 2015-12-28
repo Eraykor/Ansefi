@@ -1,4 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+@font-face {
+    font-family: "Akashi";
+    src: url('fonts/Akashi.ttf');
+}
 
 body {
     background-color: #15161C;
@@ -12,6 +16,7 @@ body {
 .menu-elem {
     color: white;
     padding: 0.5%;
+    padding-bottom: 0;
     text-align: center;
     vertical-align: middle;
     font-size: 14pt;
@@ -19,7 +24,7 @@ body {
 
 .menu-link {
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Akashi', sans-serif;
 }
 
 .menu-link:hover {
@@ -32,6 +37,10 @@ body {
     background-color: transparent;
     border-color: transparent;
     border-bottom-color: white;
+}
+
+.loupe {
+    text-decoration: none;
 }
 
 .img_ansefi {
@@ -52,9 +61,13 @@ body {
     z-index: 1;
 }
 
+.fleche {
+    text-decoration: none;
+}
+
 h1 {
     text-decoration: underline;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Akashi', sans-serif;
 }
 
 p {
@@ -69,13 +82,19 @@ p {
     font-weight: bold;
 }
 
+hr {
+    width: 10%;
+}
+
 .news {
     background: linear-gradient(to left, #010a0c 5%, #02161a 95%);
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin-top: 1%;
     margin-bottom: 2%;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Akashi', sans-serif;
+    padding-top: 0.3%;
+    font-weight: 500;
 }
 
 .infon {
@@ -98,25 +117,47 @@ p {
     margin-bottom: 2%;
     border: 1px solid grey;
     background-color: #02161a;
-    padding: 2%;
+    padding: 0%;
     width: 98%;
     margin-left: 1%;
 }
 
 .news_img {
-    display: block;
-    margin-right: 3%;
-    margin-bottom: 2%;
+    display: inline-block;
+    margin: 3%;
+    margin-top: 0;
     border: 1px solid grey;
-    float: left;
-    width: 150px;
-    height: 150px;
+    width: 155px;
+    height: 155px;
+}
+
+.div_title {
+    width: 100%;
+    height: 40px;
+    background-color: #15161C;
+    border-bottom: 1px solid grey;
+    margin: 0;
+    padding-top: 0.5%;
+    margin-bottom: 3%;
 }
 
 .news_title {
     margin-top: 0;
-    font-size: 1.5em;
-    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-family: 'Akashi', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.div_note {
+    position: absolute;
+    display: inline-block;
+    border: 1px solid grey;
+    width: 72.5%;
+    padding: 1%;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    line-height: 1.2;
 }
 
 .hover:hover {
@@ -124,13 +165,37 @@ p {
     cursor: pointer;
 }
 
-.synopsis {
+.div_second_title {
+    border-bottom: 1px solid grey;
+    background: linear-gradient(to left, #02161a, #15161C, #02161a);
+    margin: 0;
+    margin-bottom: 1%;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 0;
+}
+
+.synopcrit {
+    margin: auto;
+    margin-bottom: 2%;
+    padding-top: 0;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    width: 94%;
+    border: 1px solid grey;
     font-family: sans-serif;
     text-align: justify;
 }
 
+.second_title {
+    font-family: 'Akashi', sans-serif;
+}
+
 span {
     text-decoration: underline;
+    font-family: 'Akashi', sans-serif;
+    font-weight: 500;
 }
 
 .footer {
@@ -147,11 +212,36 @@ span {
     opacity: 0.7;
     background-color: black;
     width: 100%;
-    height: 29px;
+    height: 31px;
     bottom:0;
+    padding-bottom: 0;
     z-index: 2;
+}
+
+
+#playbutton{
+    margin-left: 0.3%;
 }
 
 #audiotrack {
     width: 100%;
+}
+
+#volume {
+    width: 100px;
+    display: inline-block;
+    margin-bottom: -0.4%;
+}
+
+#progress {
+    width: 600px;
+    display: inline-block;
+    margin-bottom: -0.4%;
+    margin-left: 1%;
+}
+
+#titreMusique {
+    display: inline-block;
+    margin-bottom: -0.4%;
+    margin-left: 2%;
 }
